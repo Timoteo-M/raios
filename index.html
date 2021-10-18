@@ -9,29 +9,41 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@700&display=swap" rel="stylesheet">
     <title>RAIOS</title>
 </head>
 
 <body>
-    <h1>RAIOS QUE O PARTA</h1>
-    <div class="butoes" ng-app="" ng-init="myCol='lightblue'">
-        <input type="range" id="myRange1" value="50" onchange="myFunction()"  ng-model="myCol1">
-        <input type="range" id="myRange2" value="50" onchange="myFunction()"  ng-model="myCol2">
-        <input type="range" id="myRange3" value="50" onchange="myFunction()"  ng-model="myCol3">
-        <input type="range" id="myRange4" value="50" onchange="myFunction()"  ng-model="myCol4">
-        <div class="aqui" style="border-radius: {{myCol1}}% {{myCol2}}% {{myCol3}}% {{myCol4}}%">
-        </div>
-        <table style="width: 600px; margin: auto; margin-top: 5%; font-size: 20px;">
-            <tr>
-                <th>border-radius:</th>
-                <td ng-bind="myCol1"></td>
-                <td ng-bind="myCol2"></td>
-                <td ng-bind="myCol3"></td>
-                <td ng-bind="myCol4"></td>
-                <td><button type="submit" onclick="copiar()" on>copiar</button></td>
-            </tr>
-        </table>
+    <div class="topo">
+        <h1>RAIOS QUE O PARTA</h1>
     </div>
+    <div>
+        <div class="corpo" ng-app="" ng-init="myCol='lightblue'">
+            <div class="butoes" >
+                <input class="but" type="range" id="myRange1" value="50" onchange="myFunction()"  ng-model="myCol1">
+                <input class="but" type="range" id="myRange2" value="50" onchange="myFunction()"  ng-model="myCol2">    
+                <input class="but" type="range" id="myRange3" value="50" onchange="myFunction()"  ng-model="myCol3">
+                <input class="but" type="range" id="myRange4" value="50" onchange="myFunction()"  ng-model="myCol4">
+            </div>
+            <div class="aqui" style="border-radius: {{myCol1}}% {{myCol2}}% {{myCol3}}% {{myCol4}}%"></div>
+            <div class="base">
+                <table>
+                    <tr>
+                        <th>border-radius:</th>
+                        <td ng-bind="myCol1"></td>
+                        <td ng-bind="myCol2"></td>
+                        <td ng-bind="myCol3"></td>
+                        <td ng-bind="myCol4"></td>
+                        <td><button type="submit" onclick="copiar()" on>copiar</button></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        
+    </div>
+
     <script src="scripts.js"></script>
 </body>
 </html>
