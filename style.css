@@ -1,0 +1,15 @@
+*{
+    text-align: center;
+    color: blue;
+}
+.aqui{
+    width: 400px;
+    height: 400px;
+    border: 2px solid blue;
+    margin: auto;
+    margin-top: 5%;
+    border-radius: 10px 0 0 0 ;
+}
+.butoes{
+    margin-top: 5%;
+}
