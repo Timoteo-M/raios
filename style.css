@@ -71,4 +71,19 @@ table{
     background: #0c5c9e;
     cursor: pointer;
 }
-
+@media(max-width:800px){
+    .butoes, .topo, .base, .corpo{
+        width: 300px;
+    }
+    .aqui{
+        width: 150px;
+        height: 150px;
+    }
+    .tab{
+        width: 200px;
+        font-size: 15px;
+    }
+    .but{
+        margin-top: 4%;
+    }
+}

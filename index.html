@@ -18,26 +18,28 @@
 
 <body>
     <div class="topo">
-        <h1>RAIOS QUE O PARTA</h1>
+        <!--<h1>NÃO HÁ RAIOS QUE O PARTA</h1>-->
+        <h1>Não há raios que o parta</h1>
     </div>
     <div>
         <div class="corpo" ng-app="" ng-init="myCol='lightblue'">
             <div class="butoes" >
                 <input class="but" type="range" id="myRange1" value="50" onchange="myFunction()"  ng-model="myCol1">
-                <input class="but" type="range" id="myRange2" value="50" onchange="myFunction()"  ng-model="myCol2">    
+                <input class="but" type="range" id="myRange2" value="50" onchange="myFunction()"  ng-model="myCol2">
+                <input class="but" type="range" id="myRange4" value="50" onchange="myFunction()"  ng-model="myCol4">    
                 <input class="but" type="range" id="myRange3" value="50" onchange="myFunction()"  ng-model="myCol3">
-                <input class="but" type="range" id="myRange4" value="50" onchange="myFunction()"  ng-model="myCol4">
+                
             </div>
             <div class="aqui" style="border-radius: {{myCol1}}% {{myCol2}}% {{myCol3}}% {{myCol4}}%"></div>
             <div class="base">
-                <table>
+                <table class="tab">
                     <tr>
                         <th>border-radius:</th>
                         <td ng-bind="myCol1"></td>
                         <td ng-bind="myCol2"></td>
                         <td ng-bind="myCol3"></td>
                         <td ng-bind="myCol4"></td>
-                        <td><button type="submit" onclick="copiar()" on>copiar</button></td>
+                        <td><button type="submit" onclick="copiar()" on>ctrl+c</button></td>
                     </tr>
                 </table>
             </div>
