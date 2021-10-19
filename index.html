@@ -23,7 +23,17 @@
     </div>
     <div>
         <div class="corpo" ng-app="" ng-init="myCol='lightblue'">
-
+            <div class="base">
+                <table class="tab">
+                    <tr>
+                        <th>border-radius:</th>
+                        <td ng-bind="myCol1"></td>
+                        <td ng-bind="myCol2"></td>
+                        <td ng-bind="myCol3"></td>
+                        <td ng-bind="myCol4"></td>
+                    </tr>
+                </table>
+            </div>
             <div class="aqui" style="border-radius: {{myCol1}}% {{myCol2}}% {{myCol3}}% {{myCol4}}%"></div>
             <div class="butoes" >
                 <input class="but" type="range" id="myRange1" value="50" onchange="myFunction()"  ng-model="myCol1">
@@ -33,18 +43,7 @@
                 
             </div>
             
-            <div class="base">
-                <table class="tab">
-                    <tr>
-                        <th>border-radius:</th>
-                        <td ng-bind="myCol1"></td>
-                        <td ng-bind="myCol2"></td>
-                        <td ng-bind="myCol3"></td>
-                        <td ng-bind="myCol4"></td>
-                        <td><button type="submit" onclick="copiar()" on>ctrl+c</button></td>
-                    </tr>
-                </table>
-            </div>
+            
         </div>
         
     </div>

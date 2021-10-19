@@ -1,13 +1,11 @@
+var x1, x2, x3, x4;
 function myFunction() {
-    var x1 = document.getElementById("myRange").value;
+    x1 = document.getElementById("myRange1").value;
     document.getElementById("demo").innerHTML = x1;
-    var x2 = document.getElementById("myRange").value;
+    x2 = document.getElementById("myRange2").value;
     document.getElementById("demo").innerHTML = x2;
-    var x3 = document.getElementById("myRange").value;
+    x3 = document.getElementById("myRange3").value;
     document.getElementById("demo").innerHTML = x3;
-    var x4 = document.getElementById("myRange").value;
+    x4 = document.getElementById("myRange4").value;
     document.getElementById("demo").innerHTML = x4;
-}
-function copiar(){
-    alert("Esse botão ainda não funciona, volte mais tarde!!");
 }

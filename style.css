@@ -46,6 +46,12 @@
 
     border-radius: 10px;
 }
+td{
+    width: 40px;
+}
+th{
+    width: 50px;
+}
 table{
     width: 400px;
     font-size: 20px;
