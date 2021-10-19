@@ -23,6 +23,8 @@
     </div>
     <div>
         <div class="corpo" ng-app="" ng-init="myCol='lightblue'">
+
+            <div class="aqui" style="border-radius: {{myCol1}}% {{myCol2}}% {{myCol3}}% {{myCol4}}%"></div>
             <div class="butoes" >
                 <input class="but" type="range" id="myRange1" value="50" onchange="myFunction()"  ng-model="myCol1">
                 <input class="but" type="range" id="myRange2" value="50" onchange="myFunction()"  ng-model="myCol2">
@@ -30,7 +32,7 @@
                 <input class="but" type="range" id="myRange3" value="50" onchange="myFunction()"  ng-model="myCol3">
                 
             </div>
-            <div class="aqui" style="border-radius: {{myCol1}}% {{myCol2}}% {{myCol3}}% {{myCol4}}%"></div>
+            
             <div class="base">
                 <table class="tab">
                     <tr>
